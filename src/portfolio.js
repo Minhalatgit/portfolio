@@ -25,7 +25,7 @@ const greeting = {
   subTitle: emoji(
     "Senior Flutter Developer 🚀 with 5+ years of experience building scalable, high-performance mobile applications. Specialized in Flutter, Dart, BLoC, Clean Architecture, Firebase, Stripe payments, and Azure Speech AI."
   ),
-  resumeLink: "YOUR_RESUME_LINK_HERE",
+  resumeLink: "https://drive.google.com/file/d/1pKdHB2c8iol9nnIxWRq_ZUKkt9za3_fO/view?usp=sharing",
   displayGreeting: true
 };
 
