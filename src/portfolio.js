@@ -22,9 +22,8 @@ const illustration = {
 const greeting = {
   username: "Syed Minhal Nadeem",
   title: "Hi, I'm Minhal",
-  subTitle: emoji(
-    "Senior Flutter Developer 🚀 with 5+ years of experience building scalable, high-performance mobile applications. Specialized in Flutter, Dart, BLoC, Clean Architecture, Firebase, Stripe payments, and Azure Speech AI."
-  ),
+  subTitle:
+    "Senior Flutter Developer with 6+ years of experience delivering production mobile apps end to end — strong in scalable architecture, clean code practices, and integrating complex native, AI, and third-party services.",
   resumeLink: "https://drive.google.com/file/d/1pKdHB2c8iol9nnIxWRq_ZUKkt9za3_fO/view?usp=sharing",
   displayGreeting: true
 };
@@ -96,7 +95,8 @@ const techStack = {
   experience: [
     { Stack: "Flutter / Mobile Development", progressPercentage: "90%" },
     { Stack: "Architecture & State Management", progressPercentage: "85%" },
-    { Stack: "Native & AI Integrations", progressPercentage: "80%" }
+    { Stack: "Native & AI Integrations", progressPercentage: "80%" },
+    { Stack: "App Store & Play Store Deployments", progressPercentage: "85%" }
   ],
   displayCodersrank: false
 };
@@ -108,15 +108,27 @@ const workExperiences = {
   experience: [
     {
       role: "Senior Flutter Developer",
+      company: "Octdaily",
+      companylogo: require("./assets/images/octdaily_logo.jpeg"),
+      date: "Jan 2026 – Present",
+      desc: "Building healthcare Flutter products with clean, scalable architecture.",
+      descBullets: [
+        "Developing healthcare apps with Flutter and production-ready features",
+        "Applying Clean Architecture and BLoC for maintainable codebases",
+        "Integrating APIs and shipping features to production"
+      ]
+    },
+    {
+      role: "Senior Flutter Developer",
       company: "Veraqor",
       companylogo: require("./assets/images/veraqor.png"),
-      date: "Mar 2025 – Present",
-      desc: "Working on AI-powered Flutter applications with real-time voice & avatar interaction.",
+      date: "Mar 2025 – July 2025",
+      desc: "Built an AI-powered Flutter assistant with real-time voice and avatar interaction.",
       descBullets: [
-        "Built AI Flutter app using Azure Avatar & Speech SDK",
-        "Integrated native WebRTC services using MethodChannel & EventChannel",
-        "Implemented voice recognition & speech synthesis workflows",
-        "Collaborated with AI & backend teams for seamless integration"
+        "Integrated Azure Avatar & Speech SDK into Flutter",
+        "Bridged native SDKs via MethodChannel and EventChannel",
+        "Enabled real-time voice interaction with WebRTC",
+        "Connected Flutter to the AI orchestration layer end to end"
       ]
     },
     {
@@ -124,12 +136,12 @@ const workExperiences = {
       company: "TekRevol",
       companylogo: require("./assets/images/tekrevol.png"),
       date: "Nov 2021 – Mar 2025",
-      desc: "Led Flutter & Android app development for enterprise and consumer applications.",
+      desc: "Delivered Flutter & Android apps from concept to Play Store and App Store release.",
       descBullets: [
-        "Developed apps from concept to production",
-        "Worked on large-scale Flutter codebases",
-        "Collaborated with cross-functional teams",
-        "Represented team at CodeLaunch Accelerator Hackathon 2022"
+        "Built scalable apps across social, e-commerce, and services domains",
+        "Owned features, bug fixes, requirements, and store releases",
+        "Collaborated with backend, QA, design, and BA teams",
+        "Represented the team at CodeLaunch Accelerator Hackathon 2022"
       ]
     },
     {
@@ -137,14 +149,25 @@ const workExperiences = {
       company: "Technado Pvt Ltd",
       companylogo: require("./assets/images/technado.png"),
       date: "Jan 2021 – Nov 2021",
-      desc: "Developed Android applications using Java & Kotlin with REST API integration."
+      desc: "Developed and maintained Android apps in Java and Kotlin.",
+      descBullets: [
+        "Built and maintained Android applications with Java & Kotlin",
+        "Fixed bugs and delivered new features with a focus on UX",
+        "Collaborated with cross-functional teams for timely releases"
+      ]
     },
     {
       role: "Android Developer",
       company: "Avialdo Solutions",
       companylogo: require("./assets/images/avialdo.png"),
       date: "Dec 2019 – Dec 2020",
-      desc: "Worked on Android apps, feature development, bug fixing & production releases."
+      desc: "Supported production Android apps through features, fixes, and Play Store releases.",
+      descBullets: [
+        "Implemented Android features and fixed production bugs",
+        "Tracked and resolved client support tickets",
+        "Deployed apps to the Play Store",
+        "Worked with backend, design, and QA under senior guidance"
+      ]
     }
   ]
 };
@@ -162,7 +185,6 @@ const openSource = {
 
 const bigProjects = {
   title: "Key Projects",
-  subtitle: "PRODUCTION APPLICATIONS",
   projects: [
     {
       image: require("./assets/images/alfardan.png"),
