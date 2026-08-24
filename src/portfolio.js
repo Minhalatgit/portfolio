@@ -24,7 +24,7 @@ const greeting = {
   title: "Hi, I'm Minhal",
   subTitle:
     "Senior Flutter Developer with 6+ years of experience delivering production mobile apps end to end — strong in scalable architecture, clean code practices, and integrating complex native, AI, and third-party services.",
-  resumeLink: "https://drive.google.com/file/d/1pKdHB2c8iol9nnIxWRq_ZUKkt9za3_fO/view?usp=sharing",
+  resumeLink: "https://drive.google.com/file/d/1bZ9zWVIPW--Sq_5ORbZR6ejbfjngmYMN/view",
   displayGreeting: true
 };
 
