@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {greeting} from "../portfolio";
+import profile from "../assets/images/profile.png";
 
 const LINKS = [
   {id: "skills", label: "Skills"},
@@ -31,8 +32,11 @@ export default function Nav({theme, onToggleTheme, scrolled}) {
     <header className={`nav-wrap ${scrolled ? "scrolled" : ""}`}>
       <nav className="nav" aria-label="Primary">
         <a href="#top" className="brand" aria-label="Back to top">
-          <span className="brand-mark">M</span>
-          <span className="brand-name">{greeting.username.split(" ")[1]}</span>
+          <img className="brand-photo" src={profile} alt="" width="36" height="36" />
+          <span className="brand-name">
+            <span className="brand-first">Syed </span>
+            {greeting.username.replace(/^Syed\s+/, "")}
+          </span>
         </a>
         <ul className="nav-links">
           {LINKS.map(l => (
