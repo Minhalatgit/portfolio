@@ -354,7 +354,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Open to senior Flutter & mobile opportunities",
+  subtitle: "Open to Senior Flutter & Mobile opportunities",
   number: "+92 331 2226066",
   email_address: "minhalnadeem@gmail.com",
   location: "Karachi, Pakistan",
