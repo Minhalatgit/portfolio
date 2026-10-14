@@ -3,15 +3,6 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-
-// Splash Screen
-
-const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
-};
 
 // Summary And Greeting Section
 
@@ -22,6 +13,7 @@ const illustration = {
 const greeting = {
   username: "Syed Minhal Nadeem",
   title: "Hi, I'm Minhal",
+  headline: "Flutter apps, engineered to scale.",
   subTitle:
     "Senior Flutter Developer with 6+ years of experience delivering production mobile apps end to end — strong in scalable architecture, clean code practices, and integrating complex native, AI, and third-party services.",
   resumeLink: "https://drive.google.com/file/d/1bZ9zWVIPW--Sq_5ORbZR6ejbfjngmYMN/view",
@@ -45,28 +37,58 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I Do",
-  subTitle: "MOBILE & AI-POWERED APPLICATION DEVELOPMENT",
+  subTitle: "Mobile & AI-powered application development",
   skills: [
-    emoji("⚡ Build scalable Flutter apps using Clean Architecture, BLoC & MVVM"),
-    emoji("⚡ Native SDK integrations using MethodChannel & EventChannel"),
-    emoji("⚡ AI-powered apps using Azure Speech SDK, Avatar & WebRTC"),
-    emoji("⚡ Payments, Monetization & App Deployment (Play Store & App Store)")
+    "Build scalable Flutter apps using Clean Architecture, BLoC & MVVM",
+    "Native SDK integrations using MethodChannel & EventChannel",
+    "AI-powered apps using Azure Speech SDK, Avatar & WebRTC",
+    "Payments, Monetization & App Deployment (Play Store & App Store)"
   ],
 
-  softwareSkills: [
-    { skillName: "Flutter", fontAwesomeClassname: "fas fa-mobile-alt" },
-    { skillName: "Dart", fontAwesomeClassname: "fas fa-code" },
-    { skillName: "Android", fontAwesomeClassname: "fab fa-android" },
-    { skillName: "Kotlin", fontAwesomeClassname: "fas fa-code" },
-    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
-    { skillName: "BLoC", fontAwesomeClassname: "fas fa-project-diagram" },
-    { skillName: "GetX", fontAwesomeClassname: "fas fa-layer-group" },
-    { skillName: "Firebase", fontAwesomeClassname: "fas fa-fire" },
-    { skillName: "Stripe", fontAwesomeClassname: "fab fa-cc-stripe" },
-    { skillName: "WebRTC", fontAwesomeClassname: "fas fa-video" },
-    { skillName: "REST APIs", fontAwesomeClassname: "fas fa-network-wired" },
-    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" }
+  skillGroups: [
+    {
+      title: "Mobile",
+      icon: "fas fa-mobile-alt",
+      items: ["Flutter", "Dart", "Kotlin", "Java"]
+    },
+    {
+      title: "Architecture",
+      icon: "fas fa-sitemap",
+      items: ["Clean Architecture", "BLoC", "GetX", "MVC / MVVM"]
+    },
+    {
+      title: "Integrations",
+      icon: "fas fa-plug",
+      items: [
+        "Firebase",
+        "FCM Push",
+        "Stripe",
+        "RevenueCat",
+        "In-App Purchases",
+        "Ads Monetization",
+        "WebRTC",
+        "REST APIs"
+      ]
+    },
+    {
+      title: "Delivery",
+      icon: "fas fa-rocket",
+      items: ["CI/CD", "Unit Testing", "Play Store / App Store", "Git"]
+    }
   ],
+
+  aiWorkflow: {
+    kicker: "AI in my workflow",
+    title: "I use AI to ship faster, without cutting corners.",
+    desc:
+      "I use LLMs and AI coding tools every day to move faster without lowering the bar. Architecture decisions, code review and production quality stay with me — AI handles the grind.",
+    points: [
+      { icon: "fas fa-bolt", text: "Scaffolding features and boilerplate in minutes" },
+      { icon: "fas fa-search", text: "Exploring unfamiliar SDKs, native APIs and codebases faster" },
+      { icon: "fas fa-vial", text: "Drafting unit tests and edge cases to cover" },
+      { icon: "fas fa-bug", text: "Debugging, refactoring and reviewing diffs with a second pair of eyes" }
+    ]
+  },
   display: true
 };
 
@@ -79,26 +101,14 @@ const educationInfo = {
       schoolName: "University of Karachi (UBIT)",
       logo: require("./assets/images/uok.png"),
       subHeader: "Bachelor of Computer Science (BSCS)",
-      duration: "2016 – 2020",
-      desc: "Studied core Computer Science subjects including Data Structures, OOP, OS & Software Engineering.",
+      duration: "Jan 2016 – Jan 2020",
+      desc: "Bachelor’s in Computer Science, UBIT, University of Karachi.",
       descBullets: [
+        "Modern Computer Science curriculum",
         "Final Year Project: IoT-based Baby Monitoring System"
       ]
     }
   ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true,
-  experience: [
-    { Stack: "Flutter / Mobile Development", progressPercentage: "90%" },
-    { Stack: "Architecture & State Management", progressPercentage: "85%" },
-    { Stack: "Native & AI Integrations", progressPercentage: "80%" },
-    { Stack: "App Store & Play Store Deployments", progressPercentage: "85%" }
-  ],
-  displayCodersrank: false
 };
 
 // Work experience section
@@ -113,22 +123,21 @@ const workExperiences = {
       date: "Jan 2026 – Present",
       desc: "Building healthcare Flutter products with clean, scalable architecture.",
       descBullets: [
-        "Developing healthcare apps with Flutter and production-ready features",
-        "Applying Clean Architecture and BLoC for maintainable codebases",
-        "Integrating APIs and shipping features to production"
+        "Built healthcare products using Flutter with a focus on production-ready quality",
+        "Leveraged BLoC state management with Clean Architecture for maintainable solutions",
+        "Handled API integrations and end-to-end delivery of production features"
       ]
     },
     {
       role: "Senior Flutter Developer",
       company: "Veraqor",
       companylogo: require("./assets/images/veraqor.png"),
-      date: "Mar 2025 – July 2025",
+      date: "Mar 2025 – Jul 2025",
       desc: "Built an AI-powered Flutter assistant with real-time voice and avatar interaction.",
       descBullets: [
-        "Integrated Azure Avatar & Speech SDK into Flutter",
-        "Bridged native SDKs via MethodChannel and EventChannel",
-        "Enabled real-time voice interaction with WebRTC",
-        "Connected Flutter to the AI orchestration layer end to end"
+        "Built AI-powered Flutter app with Azure Avatar/Speech SDK for real-time voice and avatar interaction",
+        "Integrated native SDKs using MethodChannel/EventChannel for Azure WebRTC services",
+        "Developed voice recognition and synthesis workflows for seamless AI responses"
       ]
     },
     {
@@ -138,9 +147,8 @@ const workExperiences = {
       date: "Nov 2021 – Mar 2025",
       desc: "Delivered Flutter & Android apps from concept to Play Store and App Store release.",
       descBullets: [
-        "Built scalable apps across social, e-commerce, and services domains",
-        "Owned features, bug fixes, requirements, and store releases",
-        "Collaborated with backend, QA, design, and BA teams",
+        "Led Flutter/Android app development from concept to deployment",
+        "Enhanced a large-scale codebase for smooth feature releases",
         "Represented the team at CodeLaunch Accelerator Hackathon 2022"
       ]
     },
@@ -151,9 +159,8 @@ const workExperiences = {
       date: "Jan 2021 – Nov 2021",
       desc: "Developed and maintained Android apps in Java and Kotlin.",
       descBullets: [
-        "Built and maintained Android applications with Java & Kotlin",
-        "Fixed bugs and delivered new features with a focus on UX",
-        "Collaborated with cross-functional teams for timely releases"
+        "Developed Android apps using Java and Kotlin",
+        "Collaborated with designers and backend teams on UI/UX and RESTful API integration"
       ]
     },
     {
@@ -163,10 +170,8 @@ const workExperiences = {
       date: "Dec 2019 – Dec 2020",
       desc: "Supported production Android apps through features, fixes, and Play Store releases.",
       descBullets: [
-        "Implemented Android features and fixed production bugs",
-        "Tracked and resolved client support tickets",
-        "Deployed apps to the Play Store",
-        "Worked with backend, design, and QA under senior guidance"
+        "Built and enhanced Android apps, delivering features and fixes",
+        "Supported the flagship product with issue resolution and rollouts"
       ]
     }
   ]
@@ -187,10 +192,17 @@ const bigProjects = {
   title: "Key Projects",
   projects: [
     {
+      image: require("./assets/images/healthcare.png"),
+      projectName: "Confidential Healthcare Product",
+      projectDesc:
+        "Scalable Flutter application built on a modular architecture with BLoC and Clean Architecture.",
+      footerLink: []
+    },
+    {
       image: require("./assets/images/alfardan.png"),
       projectName: "Alfardan Exchange – Send Money",
       projectDesc:
-        "Integrated Azure Avatar Bot & Speech SDK using native SDKs for real-time AI interaction.",
+        "Integrated an interactive WebRTC bot for real-time, face-to-face digital avatar communication, using Azure Avatar & Speech native SDKs.",
       footerLink: [
         {
           name: "Play Store",
@@ -199,14 +211,14 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/pbpark.png"),
-      projectName: "Peanut Butter Park",
+      image: require("./assets/images/riseupkings.jpg"),
+      projectName: "Rise Up King",
       projectDesc:
-        "Flutter-based social media app for dog owners with real-time chat & Google Maps.",
+        "Self-improvement app with daily challenges, progress tracking and social community features.",
       footerLink: [
         {
           name: "App Store",
-          url: "https://apps.apple.com/us/app/peanut-butter-park/id1635347261"
+          url: "https://apps.apple.com/us/app/rise-up-kings/id6497878712"
         }
       ]
     }
@@ -344,7 +356,9 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Open to senior Flutter & mobile opportunities",
   number: "+92 331 2226066",
-  email_address: "minhalnadeem@gmail.com"
+  email_address: "minhalnadeem@gmail.com",
+  location: "Karachi, Pakistan",
+  interests: ["Book Reading", "Travelling"]
 };
 
 // Twitter Section
@@ -354,16 +368,22 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
+// Hero stats
+
+const heroStats = [
+  {value: "6+", label: "Years shipping mobile"},
+  {value: "5", label: "Teams & companies"},
+  {value: "2", label: "Stores: Play & App Store"}
+];
+
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
   greeting,
   socialMediaLinks,
-  splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
   workExperiences,
   openSource,
   bigProjects,
@@ -374,5 +394,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  heroStats
 };

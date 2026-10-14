@@ -26,3 +26,6 @@ yarn-error.log*
 #user generated content
 public/profile.json
 public/blogs.json
+
+# personal documents (resume etc.)
+/private

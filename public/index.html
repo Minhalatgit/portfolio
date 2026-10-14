@@ -25,22 +25,20 @@
     <meta property="twitter:image" content="https://minhal-dev.netlify.app/social-preview.png">
 
     <meta name="msapplication-TileColor" content="#603cba">
-    <meta name="theme-color" content="#6c63ff" />
+    <meta name="theme-color" content="#0a0a10" />
 
     <!-- Customize icons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v9=minhal">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v9=minhal">
-    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v9=minhal" color="#885bd5">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v9=minhal">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?v9=minhal">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v10=minhal">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png?v10=minhal">
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v10=minhal" color="#885bd5">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v10=minhal">
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png?v10=minhal">
 	  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
-    <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
+
     
     <!--
       Google Analytics removed: the previous snippet used the template
@@ -50,6 +48,9 @@
       own Measurement ID (format: G-XXXXXXXXXX).
     -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css">
 
 
@@ -64,6 +65,7 @@
     -->
   </head>
   <body>
+    <script>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -71,7 +73,8 @@
       If you open it directly in the browser, you will see an empty page.
 
       You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      The build step will place the bundled scripts into the <body>
+    <script>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t)}catch(e){}</script> tag.
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
