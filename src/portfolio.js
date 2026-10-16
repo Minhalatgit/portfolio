@@ -368,12 +368,92 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
+
+// Apps live on the App Store / Play Store
+
+const liveAppsSection = {
+  title: "Apps Live on the Stores",
+  subtitle: "A selection of production apps I have built and shipped.",
+  display: true
+};
+
+const liveApps = [
+  {
+    name: "LinkedUnion",
+    image: require("./assets/images/apps/linkedunion.jpg"),
+    ios: "https://apps.apple.com/us/app/linkedunion/id1274702587",
+    android: "https://play.google.com/store/apps/details?id=com.lu.linkedunion&hl=en",
+    website: "https://linkedunion.com/"
+  },
+  {
+    name: "Rise Up King",
+    image: require("./assets/images/apps/riseupking.jpg"),
+    ios: "https://apps.apple.com/us/app/rise-up-kings/id6497878712",
+    android: "https://play.google.com/store/apps/details?id=com.app.riseupkings&hl=en",
+    website: "https://www.riseupkings.com/"
+  },
+  {
+    name: "Roll",
+    image: require("./assets/images/apps/roll.jpg"),
+    ios: "https://apps.apple.com/us/app/roll-jiu-jitsu-mma-training/id6498894329",
+    android: "https://play.google.com/store/apps/details?id=com.roll.app.roll_app&hl=en",
+    website: "https://www.rjja.ca/"
+  },
+  {
+    name: "Pets Vet Connect",
+    image: require("./assets/images/apps/petsvetconnect.jpg"),
+    ios: "https://apps.apple.com/pk/app/pets-vet-connect/id6736534307",
+    android: "https://play.google.com/store/apps/details?id=com.app.pets.vet.app&hl=en",
+    website: "http://www.petsvetconnect.com/"
+  },
+  {
+    name: "Houze Hookup",
+    image: require("./assets/images/apps/houzehookup.jpg"),
+    ios: "https://apps.apple.com/us/app/houze-hookup/id6461727762",
+    website: "https://www.houze-hookup.com/"
+  },
+  {
+    name: "Catalink",
+    image: require("./assets/images/apps/catalink.jpg"),
+    ios: "https://apps.apple.com/us/app/catalink/id6756884712",
+    android: "https://play.google.com/store/apps/details?id=com.cata.link.app&hl=en",
+    website: "https://catalink.app/"
+  },
+  {
+    name: "Myndify",
+    image: require("./assets/images/apps/myndify.jpg"),
+    ios: "https://apps.apple.com/us/app/myndify/id6502792485",
+    android: "https://play.google.com/store/apps/details?id=com.app.mynder.app&hl=en_US",
+    website: "https://myndifyapp.com/"
+  },
+  {
+    name: "Libido",
+    image: require("./assets/images/apps/libido.jpg"),
+    ios: "https://apps.apple.com/us/app/libido/id6476115459",
+    android: "https://play.google.com/store/apps/details?id=com.libidohealth.app&hl=en",
+    website: "https://libido.health/"
+  },
+  {
+    name: "The OneSource",
+    image: require("./assets/images/apps/onesource.jpg"),
+    ios: "https://apps.apple.com/pk/app/the-onesource/id6754937721",
+    android: "https://play.google.com/store/apps/details?id=com.one.source.app&hl=en"
+  },
+  {
+    name: "Alfardan Exchange",
+    image: require("./assets/images/apps/alfardan.jpg"),
+    ios: "https://apps.apple.com/pk/app/alfardan-exchange-send-money/id6478163453",
+    android: "https://play.google.com/store/apps/details?id=com.synergates.alfardanapp.prod&hl=en",
+    website: "https://alfardanexchange.com/"
+  }
+];
+
 // Hero stats
 
 const heroStats = [
   {value: "6+", label: "Years shipping mobile"},
   {value: "5", label: "Teams & companies"},
-  {value: "2", label: "Stores: Play & App Store"}
+  {value: "10+", label: "Apps live on the stores"}
 ];
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -395,5 +475,7 @@ export {
   twitterDetails,
   isHireable,
   resumeSection,
-  heroStats
+  heroStats,
+  liveApps,
+  liveAppsSection
 };
