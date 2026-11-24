@@ -11,7 +11,7 @@ export default function Experience() {
         <SectionHead
           kicker="Journey"
           title="Where I’ve built things"
-          sub="Six years across product teams and agencies — from Android roots to Flutter at scale."
+          sub="Seven years across product teams and agencies — from native Android to Flutter."
         />
         <ol className="timeline">
           {workExperiences.experience.map((job, i) => (

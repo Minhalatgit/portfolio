@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Work from "./components/Work";
@@ -28,6 +29,7 @@ function App() {
       <Nav theme={theme} onToggleTheme={toggleTheme} scrolled={scrolled} />
       <main id="main">
         <Hero />
+        <About />
         <Skills />
         <Experience />
         <Work />

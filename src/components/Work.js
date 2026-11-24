@@ -11,7 +11,7 @@ export default function Work() {
         <SectionHead
           kicker="Selected work"
           title={bigProjects.title}
-          sub="Production apps across healthcare, fintech, social and self-improvement."
+          sub="Flutter work across healthcare, pet health and social."
         />
         <div className="work-grid">
           {bigProjects.projects.map((p, i) => (
@@ -28,6 +28,15 @@ export default function Work() {
                 </div>
                 <h3>{p.projectName}</h3>
                 <p>{p.projectDesc}</p>
+                {p.tech && (
+                  <ul className="tech">
+                    {p.tech.map(t => (
+                      <li key={t} className="chip">
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 {p.footerLink.length > 0 && (
                 <div className="project-links">
                   {p.footerLink.map(l => (

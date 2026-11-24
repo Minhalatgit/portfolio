@@ -5,8 +5,7 @@ import {contactInfo, socialMediaLinks, greeting} from "../portfolio";
 const SOCIALS = [
   {key: "github", label: "GitHub", icon: "fab fa-github"},
   {key: "linkedin", label: "LinkedIn", icon: "fab fa-linkedin-in"},
-  {key: "medium", label: "Medium", icon: "fab fa-medium-m"},
-  {key: "stackoverflow", label: "Stack Overflow", icon: "fab fa-stack-overflow"}
+  {key: "medium", label: "Medium", icon: "fab fa-medium-m"}
 ];
 
 export default function Contact() {

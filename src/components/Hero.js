@@ -11,6 +11,7 @@ const SNIPPET = [
 ];
 
 export default function Hero() {
+  const [role, ...tags] = greeting.headline.split(" | ");
   return (
     <section id="top" className="hero">
       <div className="orb orb-a" aria-hidden="true" />
@@ -22,7 +23,13 @@ export default function Hero() {
             {contactInfo.subtitle}
           </Reveal>
           <Reveal as="h1" delay={80} className="hero-title">
-            {greeting.headline}
+            {role}
+            {tags.length > 0 && (
+              <span className="hero-tag">
+                <span className="sr-only"> | </span>
+                {tags.join(" | ")}
+              </span>
+            )}
           </Reveal>
           <Reveal as="p" delay={160} className="lead">
             {greeting.subTitle}
@@ -63,7 +70,7 @@ export default function Hero() {
                 {"\n  "}
                 <span className="c-kw">final </span>
                 <span className="c-pl">years = </span>
-                <span className="c-nm">6</span>
+                <span className="c-nm">7</span>
                 <span className="c-pl">;</span>
                 {"\n  "}
                 <span className="c-kw">final </span>

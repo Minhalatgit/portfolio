@@ -13,9 +13,15 @@ const illustration = {
 const greeting = {
   username: "Syed Minhal Nadeem",
   title: "Hi, I'm Minhal",
-  headline: "Flutter apps, engineered to scale.",
+  headline: "Senior Flutter Developer | 7 Years | AI-Assisted Development",
   subTitle:
-    "Senior Flutter Developer with 6+ years of experience delivering production mobile apps end to end — strong in scalable architecture, clean code practices, and integrating complex native, AI, and third-party services.",
+    "Senior Flutter Developer with 7 years of mobile development experience, starting in native Android (Java, Kotlin) and building in Flutter since 2021.",
+  about: [
+    "Senior Flutter Developer with 7 years of mobile development experience, starting in native Android (Java, Kotlin) and building in Flutter since 2021.",
+    "Specializes in Flutter/Dart with BLoC and Clean Architecture, architecting modular products, reviewing pull requests, and shipping features end to end.",
+    "Hands-on with real-time calling and chat (Vonage, WebRTC, SignalR, Zoom), native SDK integration through platform channels, offline-first systems, and AI-powered voice/avatar interaction (Azure Speech & Avatar SDK).",
+    "Uses AI tools (Cursor, Claude Code) for feature planning, faster implementation, and PR reviews. Open to Senior Flutter roles, remote or in Karachi."
+  ],
   resumeLink: "https://drive.google.com/file/d/1bZ9zWVIPW--Sq_5ORbZR6ejbfjngmYMN/view",
   displayGreeting: true
 };
@@ -24,10 +30,9 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/minhalatgit",
-  linkedin: "https://www.linkedin.com/in/syedminhalnadeem/",
+  linkedin: "https://linkedin.com/in/syedminhalnadeem",
   gmail: "minhalnadeem@gmail.com",
   medium: "https://medium.com/@minhalnadeem",
-  stackoverflow: "https://stackoverflow.com/users/13685153/syed-minhal",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -39,54 +44,103 @@ const skillsSection = {
   title: "What I Do",
   subTitle: "Mobile & AI-powered application development",
   skills: [
-    "Build scalable Flutter apps using Clean Architecture, BLoC & MVVM",
-    "Native SDK integrations using MethodChannel & EventChannel",
-    "AI-powered apps using Azure Speech SDK, Avatar & WebRTC",
-    "Payments, Monetization & App Deployment (Play Store & App Store)"
+    "Modular, feature-first Flutter products with BLoC and Clean Architecture",
+    "Real-time calling and chat with Vonage, WebRTC, SignalR and Zoom",
+    "Native SDK integration through platform channels, and AI voice/avatar interaction with Azure Speech & Avatar SDK",
+    "Offline-first systems, payments, and Play Store / App Store publishing"
   ],
 
   skillGroups: [
     {
-      title: "Mobile",
+      title: "Languages & Frameworks",
       icon: "fas fa-mobile-alt",
       items: ["Flutter", "Dart", "Kotlin", "Java"]
     },
     {
-      title: "Architecture",
+      title: "Architecture & State Management",
       icon: "fas fa-sitemap",
-      items: ["Clean Architecture", "BLoC", "GetX", "MVC / MVVM"]
-    },
-    {
-      title: "Integrations",
-      icon: "fas fa-plug",
       items: [
-        "Firebase",
-        "FCM Push",
-        "Stripe",
-        "RevenueCat",
-        "In-App Purchases",
-        "Ads Monetization",
-        "WebRTC",
-        "REST APIs"
+        "BLoC",
+        "GetX",
+        "Clean Architecture",
+        "MVVM",
+        "MVC",
+        "Modular / Feature-First Architecture",
+        "Dependency Injection"
       ]
     },
     {
-      title: "Delivery",
+      title: "Native Integration",
+      icon: "fas fa-microchip",
+      items: ["MethodChannel", "EventChannel", "WorkManager"]
+    },
+    {
+      title: "Local Storage & Offline-First",
+      icon: "fas fa-database",
+      items: ["Hive", "SQLite", "Room"]
+    },
+    {
+      title: "Real-Time & Communication",
+      icon: "fas fa-video",
+      items: [
+        "WebRTC",
+        "Vonage Video API",
+        "SignalR",
+        "Zego Cloud",
+        "Zoom SDK",
+        "Azure Speech & Avatar SDK"
+      ]
+    },
+    {
+      title: "Backend & Integrations",
+      icon: "fas fa-plug",
+      items: [
+        "RESTful APIs",
+        "Firebase (Auth, Firestore, Cloud Functions)",
+        "FCM",
+        "Webhooks"
+      ]
+    },
+    {
+      title: "Monetization & Payments",
+      icon: "fas fa-credit-card",
+      items: [
+        "RevenueCat",
+        "Stripe",
+        "PayPal",
+        "Apple Pay / Google Pay",
+        "Ads"
+      ]
+    },
+    {
+      title: "Engineering Practices",
       icon: "fas fa-rocket",
-      items: ["CI/CD", "Unit Testing", "Play Store / App Store", "Git"]
+      items: [
+        "Unit Testing",
+        "CI/CD",
+        "Git",
+        "Git Flow",
+        "SSL Pinning",
+        "Code Reviews",
+        "Play Store / App Store Publishing"
+      ]
+    },
+    {
+      title: "AI-Assisted Development",
+      icon: "fas fa-magic",
+      items: ["Cursor", "Claude Code"]
     }
   ],
 
   aiWorkflow: {
     kicker: "AI in my workflow",
-    title: "I use AI to ship faster, without cutting corners.",
+    title: "AI-assisted development with Cursor and Claude Code.",
     desc:
-      "I use LLMs and AI coding tools every day to move faster without lowering the bar. Architecture decisions, code review and production quality stay with me — AI handles the grind.",
+      "I use AI tools for feature planning, faster implementation, and pull request reviews.",
     points: [
-      { icon: "fas fa-bolt", text: "Scaffolding features and boilerplate in minutes" },
-      { icon: "fas fa-search", text: "Exploring unfamiliar SDKs, native APIs and codebases faster" },
-      { icon: "fas fa-vial", text: "Drafting unit tests and edge cases to cover" },
-      { icon: "fas fa-bug", text: "Debugging, refactoring and reviewing diffs with a second pair of eyes" }
+      { icon: "fas fa-map", text: "Feature planning" },
+      { icon: "fas fa-bolt", text: "Faster implementation" },
+      { icon: "fas fa-code-branch", text: "Pull request reviews" }
     ]
   },
   display: true
@@ -100,13 +154,10 @@ const educationInfo = {
     {
       schoolName: "University of Karachi (UBIT)",
       logo: require("./assets/images/uok.png"),
-      subHeader: "Bachelor of Computer Science (BSCS)",
-      duration: "Jan 2016 – Jan 2020",
-      desc: "Bachelor’s in Computer Science, UBIT, University of Karachi.",
-      descBullets: [
-        "Modern Computer Science curriculum",
-        "Final Year Project: IoT-based Baby Monitoring System"
-      ]
+      subHeader: "BS Computer Science",
+      duration: "2016 – 2020",
+      desc: "Graduation project: IoT-based Baby Monitoring System.",
+      descBullets: []
     }
   ]
 };
@@ -118,60 +169,61 @@ const workExperiences = {
   experience: [
     {
       role: "Senior Flutter Developer",
-      company: "Octdaily",
+      company: "OctDaily · Karachi",
       companylogo: require("./assets/images/octdaily_logo.jpeg"),
-      date: "Jan 2026 – Present",
-      desc: "Building healthcare Flutter products with clean, scalable architecture.",
+      date: "Jan 2026 – Nov 2026",
+      desc: "Modular Flutter platform for 2 EMR products.",
       descBullets: [
-        "Built healthcare products using Flutter with a focus on production-ready quality",
-        "Leveraged BLoC state management with Clean Architecture for maintainable solutions",
-        "Handled API integrations and end-to-end delivery of production features"
+        "Architected a modular, feature-first Flutter platform (Clean Architecture, BLoC) with a shared core of contracts wired per host app via dependency injection, reused across 2 EMR products and enabling parallel development across a 4-developer squad.",
+        "Built an offline-first data capture system for a wound-care app designed for low-connectivity regions, combining WorkManager and Hive to queue and sync images and clinical data.",
+        "Engineered a configurable, JSON-driven form engine with dynamic fields, data mapping, prefilled values, and host-level overrides.",
+        "Built a LiDAR wound-assessment proof of concept by integrating a native SDK as a Flutter plugin, for an AI team to analyze wound depth.",
+        "Integrated Vonage video/audio calling and SignalR live chat; delivered authentication, RBAC, and SSL pinning with HIPAA data-protection requirements in mind.",
+        "Reviewed pull requests and managed day-to-day task delivery."
       ]
     },
     {
       role: "Senior Flutter Developer",
-      company: "Veraqor",
+      company: "Veraqor · Karachi",
       companylogo: require("./assets/images/veraqor.png"),
       date: "Mar 2025 – Jul 2025",
-      desc: "Built an AI-powered Flutter assistant with real-time voice and avatar interaction.",
+      desc: "AI voice-avatar assistant with Azure Avatar and Speech SDKs.",
       descBullets: [
-        "Built AI-powered Flutter app with Azure Avatar/Speech SDK for real-time voice and avatar interaction",
-        "Integrated native SDKs using MethodChannel/EventChannel for Azure WebRTC services",
-        "Developed voice recognition and synthesis workflows for seamless AI responses"
+        "Built an AI voice-avatar assistant using Azure Avatar and Speech SDKs, integrated through MethodChannel/EventChannel to stream WebRTC avatar sessions and connected to a backend LLM layer.",
+        "Debugged native crashes and worked through connection-drop, latency, and rendering issues in real-time streaming."
       ]
     },
     {
       role: "Senior Flutter Developer",
-      company: "TekRevol",
+      company: "TekRevol · Karachi",
       companylogo: require("./assets/images/tekrevol.png"),
       date: "Nov 2021 – Mar 2025",
-      desc: "Delivered Flutter & Android apps from concept to Play Store and App Store release.",
+      desc: "15+ Flutter apps across social, e-commerce, pet health, and community products.",
       descBullets: [
-        "Led Flutter/Android app development from concept to deployment",
-        "Enhanced a large-scale codebase for smooth feature releases",
-        "Represented the team at CodeLaunch Accelerator Hackathon 2022"
+        "Built or contributed to 15+ Flutter apps across social, e-commerce, pet health, and community products. Joined at mid-level, promoted to senior.",
+        "Authored the team's standard GetX boilerplate, introduced Git Flow, and began pull request reviews.",
+        "Built reusable chat, payment, and notification modules; integrated Stripe, PayPal, Apple Pay, Google Pay, RevenueCat, and Google Ads.",
+        "Built features with Firebase, Zego Cloud, Zoom, and webhooks; offline-first Hive app; Bluetooth mesh networking with Bridgefy; video caching."
       ]
     },
     {
       role: "Android Developer",
-      company: "Technado Pvt Ltd",
+      company: "Technado Pvt Ltd · Karachi",
       companylogo: require("./assets/images/technado.png"),
       date: "Jan 2021 – Nov 2021",
-      desc: "Developed and maintained Android apps in Java and Kotlin.",
+      desc: "Android apps in Java and Kotlin.",
       descBullets: [
-        "Developed Android apps using Java and Kotlin",
-        "Collaborated with designers and backend teams on UI/UX and RESTful API integration"
+        "Android apps in Java/Kotlin with MVVM, Retrofit, Room, and Google Maps; REST APIs with Node.js."
       ]
     },
     {
       role: "Android Developer",
-      company: "Avialdo Solutions",
+      company: "Avialdo Solutions · Karachi",
       companylogo: require("./assets/images/avialdo.png"),
       date: "Dec 2019 – Dec 2020",
-      desc: "Supported production Android apps through features, fixes, and Play Store releases.",
+      desc: "Maintained LinkedUnion, a white-labeled Java app.",
       descBullets: [
-        "Built and enhanced Android apps, delivering features and fixes",
-        "Supported the flagship product with issue resolution and rollouts"
+        "Maintained LinkedUnion, an offline-first, white-labeled Java app (Retrofit, SQLite, build flavors, Firebase Realtime Database versioning)."
       ]
     }
   ]
@@ -189,36 +241,45 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Key Projects",
+  title: "Featured Projects",
   projects: [
     {
       image: require("./assets/images/healthcare.png"),
-      projectName: "Confidential Healthcare Product",
+      projectName: "Healthcare Platform (Confidential)",
       projectDesc:
-        "Scalable Flutter application built on a modular architecture with BLoC and Clean Architecture.",
+        "Modular Flutter platform powering 2 EMR products, designed for offline wound-data capture, video consultations, and live chat in low-connectivity regions.",
+      tech: ["Flutter", "BLoC", "Hive", "WorkManager", "Vonage", "SignalR"],
       footerLink: []
     },
     {
-      image: require("./assets/images/alfardan.png"),
-      projectName: "Alfardan Exchange – Send Money",
+      image: require("./assets/images/apps/petsvetconnect.jpg"),
+      projectName: "Pets Vet Connect",
       projectDesc:
-        "Integrated an interactive WebRTC bot for real-time, face-to-face digital avatar communication, using Azure Avatar & Speech native SDKs.",
+        "Built a two-role Flutter app end to end for pet owners and vets, with appointment booking and Zoom SDK video consultations.",
       footerLink: [
         {
           name: "Play Store",
-          url: "https://play.google.com/store/apps/details?id=com.synergates.alfardanapp.prod"
+          url: "https://play.google.com/store/apps/details?id=com.app.pets.vet.app"
+        },
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/pk/app/pets-vet-connect/id6736534307"
         }
       ]
     },
     {
-      image: require("./assets/images/riseupkings.jpg"),
-      projectName: "Rise Up King",
+      image: require("./assets/images/apps/catalink.jpg"),
+      projectName: "Catalink",
       projectDesc:
-        "Self-improvement app with daily challenges, progress tracking and social community features.",
+        "Flutter social app with chat, posting, follow/unfollow, and offline Bluetooth mesh discovery and messaging via Bridgefy.",
       footerLink: [
         {
+          name: "Play Store",
+          url: "https://play.google.com/store/apps/details?id=com.cata.link.app"
+        },
+        {
           name: "App Store",
-          url: "https://apps.apple.com/us/app/rise-up-kings/id6497878712"
+          url: "https://apps.apple.com/us/app/catalink/id6756884712"
         }
       ]
     }
@@ -354,10 +415,9 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Open to Senior Flutter & Mobile opportunities",
-  number: "+92 331 2226066",
+  subtitle: "Open to Senior Flutter roles, remote or in Karachi",
   email_address: "minhalnadeem@gmail.com",
-  location: "Karachi, Pakistan",
+  location: "Karachi, Pakistan (Open to Remote)",
   interests: ["Book Reading", "Travelling"]
 };
 
@@ -373,7 +433,7 @@ const twitterDetails = {
 
 const liveAppsSection = {
   title: "Apps Live on the Stores",
-  subtitle: "A selection of production apps I have built and shipped.",
+  subtitle: "Apps I've built or contributed to",
   display: true
 };
 
@@ -438,22 +498,15 @@ const liveApps = [
     image: require("./assets/images/apps/onesource.jpg"),
     ios: "https://apps.apple.com/pk/app/the-onesource/id6754937721",
     android: "https://play.google.com/store/apps/details?id=com.one.source.app&hl=en"
-  },
-  {
-    name: "Alfardan Exchange",
-    image: require("./assets/images/apps/alfardan.jpg"),
-    ios: "https://apps.apple.com/pk/app/alfardan-exchange-send-money/id6478163453",
-    android: "https://play.google.com/store/apps/details?id=com.synergates.alfardanapp.prod&hl=en",
-    website: "https://alfardanexchange.com/"
   }
 ];
 
 // Hero stats
 
 const heroStats = [
-  {value: "6+", label: "Years shipping mobile"},
+  {value: "7", label: "Years of mobile development"},
   {value: "5", label: "Teams & companies"},
-  {value: "10+", label: "Apps live on the stores"}
+  {value: "15+", label: "Flutter apps built or contributed"}
 ];
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
